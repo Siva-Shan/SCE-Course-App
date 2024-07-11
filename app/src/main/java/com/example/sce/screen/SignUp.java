@@ -76,7 +76,7 @@ public class SignUp extends AppCompatActivity {
                         }
                 );
 
-
+                //this was written by Sivatharsan
                 rgGender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
                     @Override
                     public void onCheckedChanged(RadioGroup group, int checkedId) {
