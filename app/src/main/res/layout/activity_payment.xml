@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewFinalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Final Price: $0.00"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:textColorHint="@color/ash"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextCardExpiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiry Date (MM/YY)"
+        android:inputType="text"
+        android:textColorHint="@color/ash"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextCardCVC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CVC"
+        android:textColor="@color/black"
+        android:textColorHint="@color/ash"
+        android:inputType="numberPassword"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonCompleteCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:text="Complete Checkout" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="325dp"
+        tools:srcCompat="@drawable/Payment" />
+</LinearLayout>

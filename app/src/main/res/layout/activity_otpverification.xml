@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvOtpPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_the_otp_sent_to_your_email"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:id="@+id/etOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOtpPrompt"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/ash"
+        android:hint="@string/enter_otp"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnVerifyOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etOtp"
+        android:backgroundTint="@color/purple"
+        android:layout_marginTop="16dp"
+        android:text="@string/verify_otp"
+        android:textColor="@color/white" />
+</RelativeLayout>

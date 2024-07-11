@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Courses"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewTotalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Price: $0.00"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/editTextPromoCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter promo code"
+            android:textColor="@color/black"
+            android:textColorHint="@color/ash"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background" />
+
+        <Button
+            android:id="@+id/buttonApplyPromo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:text="Apply"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewDiscountedPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discounted Price: $0.00"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonCheckout"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Checkout" />
+</LinearLayout>

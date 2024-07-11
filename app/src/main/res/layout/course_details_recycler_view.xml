@@ -1,0 +1,35 @@
+<!-- res/layout/user_list_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/course_row"
+    android:orientation="horizontal"
+    android:background="@drawable/rounded_background"
+    android:layout_marginBottom="5dp"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Course Name" />
+        <TextView
+            android:id="@+id/published_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:text="Published date" />
+    </LinearLayout>
+</LinearLayout>

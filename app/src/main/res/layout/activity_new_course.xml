@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".screen.Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_new_course"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:textSize="19sp"/>
+
+            <EditText
+                android:id="@+id/editTextCourseName"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/ash"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:hint="Course Name" />
+
+            <EditText
+                android:id="@+id/editTextCourseFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/ash"
+                android:hint="Course Fee"
+                android:inputType="numberDecimal" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/multiAutoCompleteTextViewBranches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/ash"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:hint="Branches" />
+
+            <EditText
+                android:id="@+id/editTextDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/ash"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:hint="Duration (days)"
+                android:inputType="number" />
+
+            <EditText
+                android:focusable="false"
+                android:inputType="none"
+                android:id="@+id/editTextRegistrationCloseDate"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/ash"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:hint="Registration Close Date" />
+
+            <EditText
+                android:focusable="false"
+                android:inputType="none"
+                android:id="@+id/editTextStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColorHint="@color/ash"
+                android:textColor="@color/black"
+                android:hint="Start Date" />
+
+            <EditText
+                android:id="@+id/editTextMaxParticipants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:hint="Max Participants"
+                android:textColor="@color/black"
+                android:textColorHint="@color/ash"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/buttonAddCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple"
+                android:textColor="@color/white"
+                android:text="Add Course" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

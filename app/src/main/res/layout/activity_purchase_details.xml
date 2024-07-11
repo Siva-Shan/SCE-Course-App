@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Purchase Details"
+        android:layout_marginBottom="17dp" />
+
+    <TextView
+        android:background="@drawable/rounded_background"
+        android:id="@+id/textViewPurchaseDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:background="@drawable/rounded_background"
+        android:id="@+id/courses"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textColor="@color/quantum_purple900"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonCancelPurchase"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Cancel Purchase" />
+</LinearLayout>
